@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorPrimario: rgb(3, 37, 82); 
+    --colorSecundario: rgb(35, 79, 138);
+    --colorRosa: rgb(255, 121, 188);
+}
+body{
+    background: var(--colorPrimario);
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.navbar .container{
+    height: 50px;
+} 
+.navbar-brand img{
+    width: 90px;
+    height: 90px;
+    margin: 0 20px;
+}
+.navbar-brand{
+    color: #fff;
+    font-weight: bold;
+}
+#navbarNav .nav-item{
+    background: var(--colorSecundario);
+    height: 90px;
+}
+#navbarNav ul li a{
+    color: #fff;
+    margin: 25px 50px;
+}
+#hero{
+    position: relative;
+    margin-top: 120px;
+    margin-right: 70px;
+}
+#hero .texto{
+    width: 50%;
+    position: absolute;
+    color: #fff;
+    padding: 20px 120px 0 20px;
+    top: -50px;
+}
+#hero .texto h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+#hero .texto p{
+    color: #000;
+    margin-bottom: 30px;
+}
+#hero .texto p strong{
+    color: #fff;
+}
+#hero .texto button{
+    color: #fff;
+    background: var(--colorSecundario);
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+#hero .texto .redes{
+    display: flex;
+    margin-top: 60px;
+}
+#hero .texto .redes p{
+    color: #fff;
+    font-weight:bold;
+    margin-top: 9px
+}
+#hero .texto .redes a img{
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+}
+#hero .imagen{
+    width: 50%;
+    position: absolute;
+    left: 700px;
+    top: 0;
+}
+#hero .imagen img{
+    z-index: 2;
+    position: absolute;
+    height: 470px;
+    width: 306px;
+    left: 40px;
+    top: -130px;
+    border-radius: 20px;
+}
+
+.hexagono {
+    position: relative;
+    left: 70px;
+    width: 240px;
+    height: 300px;
+    background: var(--colorSecundario);
+    transform: rotate(90deg);
+}
+
+.hexagono:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid var(--colorSecundario);
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+}
+
+.hexagono:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 0px;
+    height: 0px;
+    border-left: 100px solid var(--colorSecundario); 
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#hobbies h2{
+    color: #fff;
+    font-weight: 400;
+    margin: 0 45%;
+    margin-bottom: 30px;
+}
+
+#hobbies .tarjetas{
+    display: flex;
+    margin: 0 210px;
+}
+
+#hobbies .tarjetas .card{
+    margin: 10px;
+    background: var(--colorSecundario);
+    color: #fff;
+}
+
+#hobbies .tarjetas .card img{
+    height: 200px;
+}
+
+#habilidades h2{
+    color: #fff;
+    font-weight: 400;
+    margin: 200px 40%;
+    margin-bottom: 30px;
+}
+
+#habilidades .card {
+    background: var(--colorPrimario);
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    height: 255px;
+}
+
+#habilidades .card img{
+    height: 150px;
+    width: 180px;
+}
+
+#habilidades .card p{
+    height: 150px;
+    width: 180px;
+}
+
+#habilidades .habilidades3, .habilidades2{
+    display: flex;
+}
+
+.habilidades2{
+    margin-top: 60px;
+    margin-left: 18%;
+}
+
+#habilidades .contenedor{
+    margin: 50px 250px 0 250px;
+}
+
+
+#proyectos{
+    width: 80%;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+#proyectos h3{
+    color: #fff;
+    font-weight: 400;
+    margin: 100px 40%;
+    margin-bottom: 30px;
+}
+
+#proyectos #carouselproyectos .carousel-inner img{
+    width: 50px;
+    height: 500px;
+}
+
+
+#estudios h2{
+    color: #fff;
+    font-weight: 400;
+    margin: 100px 45%;
+    margin-bottom: 30px;
+}
+
+
+#estudios .estudiosPrincipales{
+    background: var(--colorSecundario);
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+#estudios .estudiosPrincipales img:nth-child(1){
+    width: 100px;
+    height: 100px;
+}
+
+#estudios .estudiosPrincipales img{
+    width: 295px;
+    height: 171px;
+}
+
+footer{
+    background: var(--colorSecundario);
+    margin-top: 100px;
+    width: 100%;
+}
+
+footer .contacto{
+    margin: 30px auto;
+    display: flex;
+    width: 80%;
+}
+
+footer .contacto .redes{
+    width: 238px;
+    color: #fff;
+    padding: 30px;
+}
+
+footer .contacto img{
+    width: 100px;
+    height: 100px;
+}
+
+footer .contacto p{
+    font-size: 20px;
+}
+
+footer h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .derechos p{
+    margin: 0 35%;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+@media(max-width: 500px){
+    body{
+        width: 300px;
+    }
+
+    header{
+        width: 390px;
+        height: 100vh;
+    }
+
+    #navbarNav {
+        position: absolute;
+        z-index: 20;
+        top: 110px;
+        left: 19px;
+        width: 390px;
+    }
+    
+    .navbar{
+        width: 390px;
+        left: -8px;
+    }
+    
+    #hero {
+        position: relative;
+        margin-top: 70px;
+        margin-right: 70px;
+        width: 390px;
+    }
+
+    #hero .texto{
+        width: 372px;
+        position: relative;
+        left: -5px;
+        color: #fff;
+        padding: 15px 120px 0 20px;
+        top: -38px;
+    }
+    
+    #hero .texto h1{
+        font-weight: bolder;
+        font-size: 20px;
+        margin-bottom: 340px;
+    }
+
+    #hero .texto p{
+        position: relative;
+        left: 34px;
+        text-align: left;
+
+    }
+
+    #hero .texto button{
+        position: relative;
+        left: 35px;
+    }
+
+    #hero .texto .redes{
+        display: flex;
+        margin-top: 60px;
+        width: 80%;
+    }
+
+    #hero .texto .redes .logo{
+        position: relative;
+        left: 50px;
+    }
+    
+    #hero .texto .redes p{
+        color: #fff;
+        font-weight:bold;
+        margin-top: 9px
+    }
+    
+    #hero .texto .redes a img{
+        margin-left: 20px;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+    
+    #hero .imagen{
+        width: 100%;
+        position: absolute;
+        left: -8px;
+        top: 0;
+    }
+
+    #hero .imagen img{
+        z-index: 2;
+        height: 350px;
+        width: 260px;
+        left: 85px;
+        top: 10px;
+        border-radius: 20px;
+    }
+
+    .hexagono {
+        left: 140px;
+        top: 90px;
+        width: 144.34px;
+        height: 250px;
+        background: var(--colorRosa);
+        transform: rotate(90deg);
+    }
+    
+    .hexagono:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -72.17px;
+        width: 0px;
+        height: 0px;
+        border-right: 72.17px solid var(--colorRosa); 
+        border-top: 125px solid transparent;
+        border-bottom: 125px solid transparent; 
+    }
+    
+    .hexagono:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -72.17px;
+        width: 0px;
+        height: 0px;
+        border-left: 72.17px solid var(--colorRosa); 
+        border-top: 125px solid transparent;
+        border-bottom: 125px solid transparent; 
+    }
+
+    main{
+        width: 390px;
+        margin-top: 100px; 
+        position: relative;
+    }
+
+    #hobbies{
+        width: 370px;
+        position: relative;
+        left: 10px;
+        top: 390px;
+    }
+
+    #hobbies h2{
+        color: #fff;
+        font-weight: 400;
+        margin: 80px 150px;
+    }
+
+    #hobbies .tarjetas{
+        width: 300px;
+        margin: 30px 50px;
+        display: block;
+    } 
+
+    #hobbies .tarjetas .card{
+        margin: 20px 0;
+    }
+
+    #habilidades{
+        width: 350px;
+        position: relative;
+        left: 20px;
+        top: 340px;
+    }
+
+    #habilidades h2{
+        color: #fff;
+        font-weight: 400;
+        margin: 100px 120px;
+    }
+
+    #habilidades .contenedor{
+        margin: 100px;
+        margin-top: 0;
+    }
+
+    #habilidades .habilidades3, .habilidades2{
+        display: block;
+        margin: 0;
+    }
+
+    #habilidades .card{
+        width: 50px;
+        margin: 80px 0;
+    }
+
+    #proyectos{
+        width: 390px;
+        position: relative;
+        left: -133px;
+        top: 270px;
+    }
+
+    #proyectos h3{
+        margin: 30px 130px;
+    }
+
+    #carouselproyectos{
+        width: 90%;
+        position: relative;
+        left: 10px;
+    }
+
+    #proyectos #carouselproyectos .carousel-inner img{
+        height: 200px;
+    }
+
+    #estudios{
+        width: 300px;
+        position: relative;
+        left: 35px;
+    }
+
+    #estudios h2{
+        position: relative;
+        color: #fff;
+        font-weight: 400;
+        top: 251px;
+        left: -34px;
+    }
+    
+    
+    #estudios .estudiosPrincipales{
+        background: var(--colorSecundario);
+        width: 300px;
+        margin: 300px 0 auto;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    #estudios .estudiosPrincipales img:nth-child(1){
+        width: 70px;
+        height: 70px;
+    }
+    
+    #estudios .estudiosPrincipales img{
+        width: 200px;
+        height: 86px;
+    }
+    
+    footer{
+        background: var(--colorSecundario);
+        width: 385px;
+    }
+    
+    footer .contacto{
+        margin: 30px auto;
+        display: grid;
+        justify-content: space-between;
+        width: 80%;
+        grid-template-columns: 150px 150px;
+    }
+    
+    footer .contacto .redes{
+        width: 200px;
+        color: #fff;
+    }
+    
+    footer .contacto img{
+        width: 90px;
+        height: 100px;
+        margin: 0 5px;
+    }
+    
+    footer .contacto p{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    
+    footer h3{
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    footer .derechos img{
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .derechos p{
+        margin: 0 23%;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
